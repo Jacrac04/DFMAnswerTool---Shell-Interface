@@ -95,7 +95,7 @@ class AnswerHandler:
             self.new_type(answer, type_) 
 
             data = dict(data)
-            del data['qid']
+            #del data['qid']
             data['qnum'] = str(int(data['qnum']) + 1)
             
 
