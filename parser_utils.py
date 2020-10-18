@@ -30,7 +30,8 @@ class Parser:
             
             qnum = FIND_DIGIT_REGEX.findall(
                 QNUM_REGEX.findall(current_question_script)[0])[0]  # extract question number
-            return {'qid': qid, 'qnum': qnum}, type_
+            #return {'qid': qid, 'qnum': qnum}, type_
+            return {'qnum': qnum}, type_
         except (KeyError, IndexError) as e:
             raise NoQuestionFound(e)
 
